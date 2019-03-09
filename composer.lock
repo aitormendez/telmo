@@ -4,8 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5e33a1e3d237c627687310934cd66c3",
+    "content-hash": "25dd41dd472e0a81efaa5c55ff5cc724",
     "packages": [
+        {
+            "name": "advanced-custom-fields/advanced-custom-fields-pro",
+            "version": "5.7.13",
+            "dist": {
+                "type": "zip",
+                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.7.13",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "^1.4",
+                "ffraenz/private-composer-installer": "^2.0"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "analogmemory/wp-sync-db",
+            "version": "1.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/AnalogMemory/wp-sync-db/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.6.0",
@@ -127,6 +153,109 @@
             "time": "2018-08-27T06:10:37+00:00"
         },
         {
+            "name": "ffraenz/private-composer-installer",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ffraenz/private-composer-installer.git",
+                "reference": "dc54b0200952f8c03a08b5593a933c308343a2a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ffraenz/private-composer-installer/zipball/dc54b0200952f8c03a08b5593a933c308343a2a9",
+                "reference": "dc54b0200952f8c03a08b5593a933c308343a2a9",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "php": "^5.6 || ^7.0",
+                "vlucas/phpdotenv": "^3.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*",
+                "phpunit/phpunit": "5.7.* || ^6.3",
+                "zendframework/zend-coding-standard": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "FFraenz\\PrivateComposerInstaller\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "FFraenz\\PrivateComposerInstaller\\": "src/PrivateComposerInstaller"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fränz Friederes",
+                    "email": "fraenz@frieder.es",
+                    "homepage": "https://fraenz.frieder.es"
+                }
+            ],
+            "description": "A composer install helper for private packages",
+            "keywords": [
+                "composer",
+                "env",
+                "plugin",
+                "private",
+                "wordpress",
+                "wp"
+            ],
+            "time": "2019-01-30T21:44:48+00:00"
+        },
+        {
+            "name": "johnbillion/extended-cpts",
+            "version": "4.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/extended-cpts.git",
+                "reference": "89ba13fa10c66b77f21aacdfb794ef3607814ed5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/89ba13fa10c66b77f21aacdfb794ef3607814ed5",
+                "reference": "89ba13fa10c66b77f21aacdfb794ef3607814ed5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "automattic/phpcs-neutron-standard": "^1.5",
+                "johnbillion/php-docs-standards": "^1.2",
+                "phpunit/phpunit": "^5.7",
+                "slevomat/coding-standard": "^4.0",
+                "wimg/php-compatibility": "^8",
+                "wp-coding-standards/wpcs": "1.0"
+            },
+            "suggest": {
+                "wpackagist-plugin/rewrite-testing": "Rewrite Rule Testing"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "extended-cpts.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                }
+            ],
+            "description": "A library which provides extended functionality to WordPress custom post types and taxonomies.",
+            "homepage": "https://github.com/johnbillion/extended-cpts/",
+            "time": "2018-12-08T15:16:49+00:00"
+        },
+        {
             "name": "oscarotero/env",
             "version": "v1.1.0",
             "source": {
@@ -229,7 +358,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.1",
-                "reference": "5.1"
+                "reference": "5.1",
+                "shasum": null
             },
             "require": {
                 "php": ">=5.3.2",
@@ -470,16 +600,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.3.2",
+            "version": "v3.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "1ee9369cfbf26cfcf1f2515d98f15fab54e9647a"
+                "reference": "dbcc609971dd9b55f48b8008b553d79fd372ddde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1ee9369cfbf26cfcf1f2515d98f15fab54e9647a",
-                "reference": "1ee9369cfbf26cfcf1f2515d98f15fab54e9647a",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/dbcc609971dd9b55f48b8008b553d79fd372ddde",
+                "reference": "dbcc609971dd9b55f48b8008b553d79fd372ddde",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +648,138 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-01-30T10:43:17+00:00"
+            "time": "2019-03-06T09:39:45+00:00"
+        },
+        {
+            "name": "wp-sync-db/wp-sync-db-media-files",
+            "version": "master",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "wpackagist-plugin/autodescription",
+            "version": "3.2.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autodescription/",
+                "reference": "tags/3.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.3.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autodescription/"
+        },
+        {
+            "name": "wpackagist-plugin/easy-wp-smtp",
+            "version": "1.3.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/easy-wp-smtp/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/easy-wp-smtp.zip?timestamp=1551622438",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/easy-wp-smtp/"
+        },
+        {
+            "name": "wpackagist-plugin/query-monitor",
+            "version": "3.3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/query-monitor/",
+                "reference": "tags/3.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/query-monitor/"
+        },
+        {
+            "name": "wpackagist-plugin/remove-query-strings-from-static-resources",
+            "version": "1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/remove-query-strings-from-static-resources/",
+                "reference": "tags/1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/remove-query-strings-from-static-resources.1.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/remove-query-strings-from-static-resources/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-optimize",
+            "version": "2.2.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-optimize/",
+                "reference": "tags/2.2.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-optimize.2.2.12.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-optimize/"
+        },
+        {
+            "name": "wpackagist-plugin/wpforms-lite",
+            "version": "1.5.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
+                "reference": "tags/1.5.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.5.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wpforms-lite/"
         }
     ],
     "packages-dev": [
@@ -528,12 +789,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "54ee79a17e8cdc4ff8a1570198d5bc669a5803b8"
+                "reference": "4e04718428742618a4bf24dafca45b8645c9320d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/54ee79a17e8cdc4ff8a1570198d5bc669a5803b8",
-                "reference": "54ee79a17e8cdc4ff8a1570198d5bc669a5803b8",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4e04718428742618a4bf24dafca45b8645c9320d",
+                "reference": "4e04718428742618a4bf24dafca45b8645c9320d",
                 "shasum": ""
             },
             "conflict": {
@@ -568,8 +829,8 @@
                 "doctrine/mongodb-odm-bundle": ">=2,<3.0.1",
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=7,<7.62|>=8,<8.5.9|>=8.6,<8.6.6",
-                "drupal/drupal": ">=7,<7.62|>=8,<8.5.9|>=8.6,<8.6.6",
+                "drupal/core": ">=7,<7.62|>=8,<8.5.11|>=8.6,<8.6.10",
+                "drupal/drupal": ">=7,<7.62|>=8,<8.5.11|>=8.6,<8.6.10",
                 "erusev/parsedown": "<1.7",
                 "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.13.1|>=6,<6.7.9.1|>=6.8,<6.13.5.1|>=7,<7.2.4.1|>=7.3,<7.3.2.1",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.6|>=5.4,<5.4.12.3|>=2011,<2017.12.4.3|>=2018.6,<2018.6.1.4|>=2018.9,<2018.9.1.3",
@@ -628,7 +889,7 @@
                 "shopware/shopware": "<5.3.7",
                 "silverstripe/cms": ">=3,<=3.0.11|>=3.1,<3.1.11",
                 "silverstripe/forum": "<=0.6.1|>=0.7,<=0.7.3",
-                "silverstripe/framework": ">=3,<3.3",
+                "silverstripe/framework": ">=3,<3.6.7|>=3.7,<3.7.3|>=4,<4.0.7|>=4.1,<4.1.5|>=4.2,<4.2.4|>=4.3,<4.3.1",
                 "silverstripe/userforms": "<3",
                 "simple-updates/phpwhois": "<=1",
                 "simplesamlphp/saml2": "<1.10.6|>=2,<2.3.8|>=3,<3.1.4",
@@ -724,7 +985,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-02-14T08:06:11+00:00"
+            "time": "2019-02-26T21:14:50+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -781,6 +1042,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "wp-sync-db/wp-sync-db-media-files": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
