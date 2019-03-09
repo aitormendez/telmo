@@ -89,3 +89,28 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+/**
+ * Blade SVG for Sage
+ * https://github.com/Log1x/blade-svg-sage
+ */
+add_filter('bladesvg', function () {
+    return [
+        'svg_path' => 'resources/svg',
+        'spritesheet_path' => 'resources/svg/spritesheet.svg',
+        'spritesheet_url' => '',
+        'sprite_prefix' => '',
+        'inline' => true,
+        'class' => ''
+    ];
+});
+
+
+/**
+ * Load Google Maps API key for ACF
+ */
+add_filter('acf/fields/google_map/api', function ($api) {
+    $api['key'] = env('GOOGLE_MAPS_API');
+
+    return $api;
+});

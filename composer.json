@@ -89,7 +89,9 @@
     "wpackagist-plugin/query-monitor": "^3.1",
     "wpackagist-plugin/easy-wp-smtp": "*",
     "wpackagist-plugin/wpforms-lite": "*",
-    "johnbillion/extended-cpts": "^4.2"
+    "johnbillion/extended-cpts": "^4.2",
+    "wpackagist-plugin/post-type-switcher": "*",
+    "stoutlogic/acf-builder": "^1.8"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",

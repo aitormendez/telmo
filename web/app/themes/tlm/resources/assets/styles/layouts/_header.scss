@@ -1,2 +1,69 @@
-// TODO: .banner .nav li {}
-// TODO: .banner .nav a {}
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: #fff;
+  z-index: 2000;
+
+  .brand {
+    display: block;
+    padding: $pad-1;
+    color: black;
+  }
+
+  &.peq {
+    // background-color: #fff;
+  }
+}
+
+.nav-primary {
+  #menu-principal {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: calc(100vh - 59px);
+    padding-left: $pad-1;
+    padding-right: $pad-1;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    background-color: white;
+    z-index: 2000;
+    padding-bottom: $pad;
+  }
+
+  &.open {
+    #menu-principal {
+      left: 0;
+      transition: left $trans;
+    }
+  }
+
+  &.closed {
+    #menu-principal {
+      left: calc(-100vw - #{$pad-1} * 4);
+      transition: left $trans;
+    }
+  }
+}
+
+#hamb {
+  position: fixed;
+  right: $pad-1;
+  top: $pad-1;
+  display: block;
+  width: 32px;
+  height: 32px;
+  z-index: 2100;
+
+  &.open {
+    background-image: url("../images/svg/icons/cerrar.svg");
+  }
+
+  &.closed {
+    background-image: url("../images/svg/icons/menu.svg");
+  }
+}

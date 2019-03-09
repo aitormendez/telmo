@@ -1,0 +1,68 @@
+.post-type-archive-merz {
+  .grid {
+    width: 100%;
+  }
+
+  article {
+    width: 100%;
+    margin: 0;
+
+    a {
+      display: block;
+      position: relative;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .title {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: calc(100% - #{$pad-2});
+        height: calc(100% - #{$pad-2});
+        padding: $pad;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 1.5rem;
+        background-color: rgba(#f0f6f2, 0.45);
+        color: black;
+        opacity: 0;
+        transition: opacity $trans;
+      }
+
+      &:hover {
+        .title {
+          opacity: 1;
+          transition: opacity $trans;
+        }
+      }
+    }
+  }
+
+  @include tablet-portrait {
+    article {
+      width: 50%;
+    }
+  }
+
+  @include tablet-landscape {
+    article {
+      width: 33.33%;
+    }
+  }
+
+  @include desktop {
+    article {
+      width: 25%;
+    }
+  }
+
+  @include big-desktop {
+    article {
+      width: 20%;
+    }
+  }
+}

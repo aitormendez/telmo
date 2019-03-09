@@ -132,6 +132,7 @@ let webpackConfig = {
   },
   externals: {
     jquery: 'jQuery',
+    google: 'google',
   },
   plugins: [
     new CleanPlugin([config.paths.dist], {

@@ -1,0 +1,11 @@
+.post-type-archive-cuentos {
+  .content {
+    padding-top: $pad-4;
+
+    @extend .pad;
+
+    .main {
+      @extend .centrar;
+    }
+  }
+}
