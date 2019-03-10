@@ -124,7 +124,7 @@ add_action('pre_get_posts', function($query){
 		return $query;
 	}
 
-	if( is_post_type_archive('dialogo') && $query->is_main_query()) {
+	if( is_post_type_archive('dialogo') || is_post_type_archive('cuento') && $query->is_main_query()) {
 		$query->set('nopaging', true);
     $query->set('order', 'ASC');
 	}
