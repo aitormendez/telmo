@@ -5,6 +5,8 @@ var imagesLoaded = require('imagesloaded');
 export default {
   init() {
 
+    // isotope
+
     InfiniteScroll.imagesLoaded = imagesLoaded;
 
     var $grid = $('.grid').isotope({
@@ -36,6 +38,22 @@ export default {
       }
 
     });
+
+    // filter items on button click
+      $('.filter-button-group').on('click', 'a', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+          filter: filterValue,
+        });
+        $('.grid').isotope({
+          hiddenStyle: {
+            opacity: 0,
+          },
+          visibleStyle: {
+            opacity: 1,
+          },
+        });
+      });
 
 
 
