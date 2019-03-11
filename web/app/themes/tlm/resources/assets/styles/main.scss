@@ -10,6 +10,7 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+@import "~normalize.css/normalize.css";
 
 /** Import theme styles */
 @import "common/global";
@@ -30,4 +31,5 @@
 @import "layouts/archive-cuentos";
 @import "layouts/single-cuentos";
 @import "layouts/single-merz";
+@import "layouts/p-mundo";
 @import "layouts/tinymce";

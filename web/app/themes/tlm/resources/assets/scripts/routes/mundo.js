@@ -6,45 +6,46 @@ export default {
     // JavaScript to be fired on the mundo page
 
 
-    // Sketch scope
-    // const sketch = (p5) => {
-
-      // Variables scoped within p5
-      // const canvasWidth = p5.windowWidth;
-      // const canvasHeight = p5.windowHeight;
-      // const d = new Star(500, 300, 4);
-
-      // make library globally available
 
 
-      // Setup function
-      // ======================================
-      // p5.setup = () => {
-      //   let canvas = p5.createCanvas(canvasWidth, canvasHeight);
-      //   canvas.parent('sketch');
-      //   p5.background(200);
-      //   p5.frameRate(10);
-      // }
+    var sketch = function(p) {
+      window.p5 = p5;
 
-      // Draw function
-      // ======================================
-      // p5.draw = () => {
-      //   p5.background('#111');
-      //   drawStars(100)
-      // }
-    // }
+      let pers;
+      let telmo;
 
-    // var sketch = function(p) {
-    //   window.p5 = p5;
-    //   const canvasWidth = p.windowWidth;
-    //   const canvasHeight = p.windowHeight;
-    //   p.setup = function () {
-    //     p.createCanvas(canvasWidth, canvasHeight);
-    //     p.background(200);
-    //     p.ellipse(56, 46, 55, 55);
-    //   };
-    // };
-    // new p5(sketch);
+      p.setup = function () {
+        const canvasWidth = $('#stage').width();
+        const canvasHeight = $('#stage').height();
+        let canvas = p.createCanvas(canvasWidth, canvasHeight);
+        canvas.parent('stage');
+        p.background(230);
+        telmo = new Persona(p.width / 2 - 50, p.height / 5 * 3);
+      };
+
+      p.draw = function () {
+        telmo.show();
+      };
+
+      class Persona {
+
+        constructor(x, y) {
+          this.x = x;
+          this.y = y;
+          this.cuerpo = p.loadImage('/app/themes/tlm/dist/images/mundo/persona/persona-cuerpo.png');
+        }
+
+        show() {
+          p.image(this.cuerpo, this.x, this.y);
+        }
+
+
+      }
+
+
+
+    };
+    new p5(sketch);
 
   },
   finalize() {
