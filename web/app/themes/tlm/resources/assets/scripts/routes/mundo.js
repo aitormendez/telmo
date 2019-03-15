@@ -1,11 +1,16 @@
-import p5 from 'p5/lib/p5.min';
+import p5 from 'p5/lib/p5';
 // import 'p5/lib/addons/p5.sound';
 // import 'p5/lib/addons/p5.dom';
 export default {
   init() {
     // JavaScript to be fired on the mundo page
 
-
+    /* eslint-disable no-undef */
+    let personaPata1 = mundoData.personaPata1;
+    let personaPata2 = mundoData.personaPata2;
+    let personaCuerpo = mundoData.personaCuerpo;
+    console.log(personaCuerpo);
+    /* eslint-enable */
 
 
     var sketch = function(p) {
@@ -14,9 +19,9 @@ export default {
       let pers, telmo, cuerpo, pataIzq, pataDer;
 
       p.preload = function() {
-        cuerpo = p.loadImage('/app/themes/tlm/dist/images/mundo/persona/persona-cuerpo.png');
-        pataIzq = p.loadImage('/app/themes/tlm/dist/images/mundo/persona/persona-pata-1.png');
-        pataDer = p.loadImage('/app/themes/tlm/dist/images/mundo/persona/persona-pata-2.png');
+        cuerpo = p.loadImage(personaCuerpo);
+        pataIzq = p.loadImage(personaPata1);
+        pataDer = p.loadImage(personaPata2);
       }
 
       p.setup = function() {
