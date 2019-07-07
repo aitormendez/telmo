@@ -1,1 +1,3 @@
 path: web/wp
+_:
+  inherit: wp-cli.cognomen.yml

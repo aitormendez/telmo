@@ -6,6 +6,9 @@
     ],
     "customizer": [
       "./scripts/customizer.js"
+    ],
+    "p5.scenemanager": [
+      "./scripts/scenemanager.js"
     ]
   },
   "publicPath": "/app/themes/tlm",

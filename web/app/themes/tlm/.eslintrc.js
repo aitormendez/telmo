@@ -46,4 +46,12 @@ module.exports = {
       },
     ],
   },
+  "overrides": [
+    {
+      "files": ["scenemanager.js"],
+      "rules": {
+        "quotes": "off"
+      }
+    }
+  ],
 };
