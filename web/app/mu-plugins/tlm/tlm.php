@@ -56,7 +56,7 @@ add_action( 'init', function() {
     'author',
     'title',
     'editor',
-    'thumbnail'
+    'thumbnail',
   ];
 
   $args_merz = [
@@ -117,6 +117,7 @@ add_action( 'init', function() {
     'author',
     'title',
     'editor',
+    'thumbnail',
   ];
 
   register_extended_post_type(
