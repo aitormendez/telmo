@@ -34,9 +34,10 @@
     $anio = "";
     $mes = "";
     $fecha_nacimiento = new DateTime("2013-02-16 00:00:00");
+    global $post;
   @endphp
   @while (have_posts()) @php the_post() @endphp
-    <article  {{ post_class() }} >
+    <article id="{{ $post->post_name }}" {{ post_class() }} >
     @php
       $datetime_string = get_field('fecha_conversacion');
       $anio_nuevo = date_i18n('Y', strtotime($datetime_string));
