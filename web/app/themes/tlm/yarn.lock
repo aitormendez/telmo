@@ -9489,6 +9489,11 @@ timed-out@^4.0.0, timed-out@^4.0.1:
   resolved "https://registry.yarnpkg.com/timed-out/-/timed-out-4.0.1.tgz#f32eacac5a175bea25d7fab565ab3ed8741ef56f"
   integrity sha1-8y6srFoXW+ol1/q1Zas+2HQe9W8=
 
+timelinejs@^2.35.6:
+  version "2.35.6"
+  resolved "https://registry.yarnpkg.com/timelinejs/-/timelinejs-2.35.6.tgz#39e4737cea1687f3338d9496a8805447017856b3"
+  integrity sha1-OeRzfOoWh/MzjZSWqIBURwF4VrM=
+
 timers-browserify@^2.0.4:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-2.0.10.tgz#1d28e3d2aadf1d5a5996c4e9f95601cd053480ae"

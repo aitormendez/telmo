@@ -170,5 +170,87 @@ add_action( 'init', function() {
       ]
   );
 
+  register_extended_post_type(
+    'proyecto',
+    [
+        'show_in_rest' => true,
+        'show_in_feed' => true,
+        // 'labels'       => $labels_cuento,
+    ]
+);
+
+  // Proyectos cpt (project)
+  // --------------------------------------------------------------------------------
+
+  $cols_project = [
+    'project_format' => [
+      'title'    => __('Formato', 'tlm-CPT'),
+      'taxonomy' => 'project_format'
+    ],
+    'collective' => [
+      'title'    => __('Collective', 'tlm-CPT'),
+      'taxonomy' => 'collective'
+    ],
+    'fecha_proyecto' => [
+			'title'       => 'Fecha proyecto',
+			'meta_key'    => 'fecha_proyecto',
+			'date_format' => 'd/m/Y'
+		],
+  ];
+
+  $filters_project = [
+    'project_format' => [
+      'title'    => __('Formato', 'tlm-CPT'),
+      'taxonomy' => 'project_format'
+    ],
+    'collective' => [
+      'title'    => __('Colectivo', 'tlm-CPT'),
+      'taxonomy' => 'collective'
+    ],
+  ];
+
+  $supports_project = [
+    'title',
+    'editor',
+    'thumbnail',
+    'excerpt',
+    'taxonomy'
+  ];
+
+  $labels_project = [
+    'name'                  => _x( 'Proyectos', 'Post Type General Name', 'tlm-CPT' ),
+  	'singular_name'         => _x( 'Proyecto', 'Post Type Singular Name', 'tlm-CPT' ),
+  	'menu_name'             => __( 'Proyectos', 'tlm-CPT' ),
+  	'name_admin_bar'        => __( 'Proyecto', 'tlm-CPT' ),
+  	'archives'              => __( 'Archivo de proyectos', 'tlm-CPT' ),
+  ];
+
+  register_extended_post_type( 'project',
+    [
+      'show_in_rest' => true,
+      'show_in_feed' => true,
+      'labels'       => $labels_project,
+      'admin_cols'   => $cols_project,
+      'admin_filters'=> $filters_project,
+      'supports'     => $supports_project,
+    ]
+  );
+
+  // Project taxonomy
+  // --------------------------------------------------------------------------------
+
+  register_extended_taxonomy( 'meta_project',
+    [
+      'project',
+    ],
+    [
+      'meta_box' => 'simple',
+      'hierarchical' => false,
+    ],
+    [
+      'singular' => __( 'Meta proyecto', 'tlm-cpt' ),
+      'plural'   => __( 'Meta proyectos', 'tlm-cpt' ),
+    ]
+  );
 
 }, 0 );

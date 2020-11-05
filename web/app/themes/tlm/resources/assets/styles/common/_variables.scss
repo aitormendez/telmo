@@ -1,5 +1,26 @@
+/** Import Bootstrap functions */
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/mixins";
+
 /** Colors */
 $brand-primary: #525ddc;
+
+$theme-colors: (
+  n: #181818,
+  b: #e2e2e2,
+  r: #a00000,
+  a: #ffd900,
+  g1: #222,
+  g2: #464646,
+  g3: #777,
+  g4: #a7a7a7,
+  g5: #cecece,
+);
+
+// Generate `.bg-*` color utilities
+// @each $color, $value in $theme-colors {
+//   @include bg-variant(".bg-#{$color}", $value);
+// }
 
 /** Box Model  */
 $spacer: 2rem;
