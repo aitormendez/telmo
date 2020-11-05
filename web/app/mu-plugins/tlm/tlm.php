@@ -170,15 +170,6 @@ add_action( 'init', function() {
       ]
   );
 
-  register_extended_post_type(
-    'proyecto',
-    [
-        'show_in_rest' => true,
-        'show_in_feed' => true,
-        // 'labels'       => $labels_cuento,
-    ]
-);
-
   // Proyectos cpt (project)
   // --------------------------------------------------------------------------------
 
@@ -186,10 +177,6 @@ add_action( 'init', function() {
     'project_format' => [
       'title'    => __('Formato', 'tlm-CPT'),
       'taxonomy' => 'project_format'
-    ],
-    'collective' => [
-      'title'    => __('Collective', 'tlm-CPT'),
-      'taxonomy' => 'collective'
     ],
     'fecha_proyecto' => [
 			'title'       => 'Fecha proyecto',
@@ -202,10 +189,6 @@ add_action( 'init', function() {
     'project_format' => [
       'title'    => __('Formato', 'tlm-CPT'),
       'taxonomy' => 'project_format'
-    ],
-    'collective' => [
-      'title'    => __('Colectivo', 'tlm-CPT'),
-      'taxonomy' => 'collective'
     ],
   ];
 
