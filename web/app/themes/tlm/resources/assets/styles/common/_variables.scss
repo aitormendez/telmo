@@ -1,91 +1,10 @@
 /** Import Bootstrap functions */
-// @import "~bootstrap/scss/functions";
-// @import "~bootstrap/scss/mixins";
-
-/** Colors */
-$brand-primary: #525ddc;
+@import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  n: #181818,
-  b: #e2e2e2,
-  r: #a00000,
-  a: #ffd900,
-  g1: #222,
-  g2: #464646,
-  g3: #777,
-  g4: #a7a7a7,
-  g5: #cecece,
+  primary: #525ddc
 );
 
-// Generate `.bg-*` color utilities
-// @each $color, $value in $theme-colors {
-//   @include bg-variant(".bg-#{$color}", $value);
-// }
-
-/** Box Model  */
-$spacer: 2rem;
-
-/** Box Model  */
-$spacer: 2rem;
-$color-principal: #c9b01b;
-$color-allo: #ffcd1d;
-$color-azul: #43a3d9;
-$color-rojo: #e30000;
-$color-verde: #009d0b;
-$gray-base: #000;
-$gray-darker: lighten($gray-base, 13.5%);
-$gray-dark: lighten($gray-base, 20%);
-$gray: lighten($gray-base, 33.5%);
-$gray-light: lighten($gray-base, 46.7%);
-$gray-light-semi: lighten($gray-base, 70%);
-$gray-lighter: lighten($gray-base, 93.5%); //layout
-$pad: 15px;
-$pad-1: $pad;
-$pad-2: calc(#{$pad} * 2);
-$pad-3: calc(#{$pad} * 3);
-$pad-4: calc(#{$pad} * 4);
-$ff-sans: "dino";
-$ff-serif: "garagord";
-$trans: 0.5s;
-
-// responsive breakpoints
-
-@mixin phone-only {
-  @media (max-width: 425px) {
-    @content;
-  }
-}
-
-@mixin phone-landscape {
-  @media (min-width: 425px) {
-    @content;
-  }
-}
-
-@mixin tablet-portrait {
-  @media (min-width: 700px) {
-    @content;
-  }
-}
-
-@mixin tablet-landscape {
-  @media (min-width: 1000px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin big-desktop {
-  @media (min-width: 1800px) {
-    @content;
-  }
-}
-
-@mixin radius($radius) {
-  border-radius: $radius;
-}
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
