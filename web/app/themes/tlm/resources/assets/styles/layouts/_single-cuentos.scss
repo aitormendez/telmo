@@ -1,0 +1,13 @@
+.single-cuento,
+.que,
+.single-dialogo {
+  .content {
+    padding-top: $pad-4;
+
+    @extend .pad;
+
+    .main {
+      @extend .centrar;
+    }
+  }
+}

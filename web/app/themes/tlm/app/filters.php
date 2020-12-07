@@ -89,3 +89,52 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+/**
+ * Blade SVG for Sage
+ * https://github.com/Log1x/blade-svg-sage
+ */
+add_filter('bladesvg', function () {
+    return [
+        'svg_path' => 'resources/svg',
+        'spritesheet_path' => 'resources/svg/spritesheet.svg',
+        'spritesheet_url' => '',
+        'sprite_prefix' => '',
+        'inline' => true,
+        'class' => ''
+    ];
+});
+
+
+/**
+ * Load Google Maps API key for ACF
+ */
+add_filter('acf/fields/google_map/api', function ($api) {
+    $api['key'] = env('GOOGLE_MAPS_API');
+
+    return $api;
+});
+
+/**
+ * ordenar dialogos
+ */
+add_action('pre_get_posts', function($query){
+
+	if( is_admin() ) {
+		return $query;
+	}
+
+	if( !is_admin() && is_post_type_archive('cuento') && $query->is_main_query()) {
+		$query->set('nopaging', true);
+        $query->set('order', 'ASC');
+    }
+
+    if( !is_admin() && is_post_type_archive('dialogo') && $query->is_main_query()) {
+        $query->set('nopaging', true);
+        $query->set('meta_key', 'fecha_conversacion');
+        $query->set('orderby', 'meta_value_num');
+        $query->set('order', 'ASC');
+	}
+
+  return $query;
+});

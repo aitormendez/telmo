@@ -68,7 +68,7 @@ let webpackConfig = {
             { loader: 'css', options: { sourceMap: config.enabled.sourceMaps } },
             {
               loader: 'postcss', options: {
-                postcssOptions: { path: __dirname, ctx: config },
+                config: { path: __dirname, ctx: config },
                 sourceMap: config.enabled.sourceMaps,
               },
             },
@@ -85,7 +85,7 @@ let webpackConfig = {
             { loader: 'css', options: { sourceMap: config.enabled.sourceMaps } },
             {
               loader: 'postcss', options: {
-                postcssOptions: { path: __dirname, ctx: config },
+                config: { path: __dirname, ctx: config },
                 sourceMap: config.enabled.sourceMaps,
               },
             },
@@ -132,6 +132,7 @@ let webpackConfig = {
   },
   externals: {
     jquery: 'jQuery',
+    google: 'google',
   },
   plugins: [
     new CleanPlugin([config.paths.dist], {

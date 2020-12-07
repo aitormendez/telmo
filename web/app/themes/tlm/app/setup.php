@@ -11,12 +11,32 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
-    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 
-    if (is_single() && comments_open() && get_option('thread_comments')) {
-        wp_enqueue_script('comment-reply');
-    }
+  wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?key=' . env('GOOGLE_MAPS_API'), [], null, true);
+
+  wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
+  wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+
+  // if (is_page('mundo')) {
+  //   wp_enqueue_script('p5.scenemanager.js', asset_path('scripts/p5.scenemanager.js'), [], null, true);
+  // }
+
+
+  if (is_single() && comments_open() && get_option('thread_comments')) {
+      wp_enqueue_script('comment-reply');
+  }
+
+  if (is_page('mundo')) {
+    $mundo_data = [
+      'personaCuerpo' => \App\asset_path('images/mundo/persona/persona-cuerpo.png'),
+      'personaPata1' => \App\asset_path('images/mundo/persona/persona-pata-1.png'),
+      'personaPata2' => \App\asset_path('images/mundo/persona/persona-pata-2.png'),
+    ];
+    wp_localize_script('sage/main.js', 'mundoData', $mundo_data);
+  }
+
+
+
 }, 100);
 
 /**
@@ -70,6 +90,8 @@ add_action('after_setup_theme', function () {
      * @see resources/assets/styles/layouts/_tinymce.scss
      */
     add_editor_style(asset_path('styles/main.css'));
+
+    add_theme_support( 'responsive-embeds' );
 }, 20);
 
 /**
@@ -130,3 +152,8 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+/**
+ * TAMAÑOS THUMBNAILS
+ */
+add_image_size( 'merz-image', 800, 600, true );

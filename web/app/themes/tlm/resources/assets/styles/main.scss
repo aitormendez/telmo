@@ -10,9 +10,12 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+@import "~normalize.css/normalize.css";
 
 /** Import theme styles */
 @import "common/global";
+@import "fonts/dino";
+@import "fonts/garagord";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
@@ -22,4 +25,11 @@
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
+@import "layouts/front-page";
+@import "layouts/archive-dialogos";
+@import "layouts/archive-merz";
+@import "layouts/archive-cuentos";
+@import "layouts/single-cuentos";
+@import "layouts/single-merz";
+@import "layouts/p-mundo";
 @import "layouts/tinymce";

@@ -1,0 +1,11 @@
+.home {
+  .hero {
+    svg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: calc(100vw - #{$pad-1} * 4);
+      max-width: 300px;
+    }
+  }
+}
