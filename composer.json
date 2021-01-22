@@ -76,7 +76,7 @@
     "vlucas/phpdotenv": "^4.1.8",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
-    "roots/wordpress": "5.5.3",
+    "roots/wordpress": "5.6",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
@@ -87,8 +87,9 @@
     "wpackagist-plugin/query-monitor": "^3.1",
     "wpackagist-plugin/easy-wp-smtp": "*",
     "wpackagist-plugin/wpforms-lite": "*",
-    "johnbillion/extended-cpts": "^4.2",
+    "johnbillion/extended-cpts": "^4.5",
     "wpackagist-plugin/post-type-switcher": "*",
+    "wpackagist-plugin/highlighting-code-block": "*",
     "stoutlogic/acf-builder": "^1.8"
   },
   "require-dev": {

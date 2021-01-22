@@ -8,7 +8,7 @@
         <p class="cursiva">
           Poor boy <br>
           Head against a pillow<br>
-          Fast asleep <br>
+          Fast asleep<br>
           Poor girl<br>
           Head against a window<br>
           Lost in a dream

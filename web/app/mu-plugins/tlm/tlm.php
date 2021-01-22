@@ -228,7 +228,7 @@ add_action( 'init', function() {
     ],
     [
       'meta_box' => 'simple',
-      'hierarchical' => false,
+      'hierarchical' => true,
     ],
     [
       'singular' => __( 'Meta proyecto', 'tlm-cpt' ),

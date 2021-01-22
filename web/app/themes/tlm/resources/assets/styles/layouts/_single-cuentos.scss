@@ -1,6 +1,7 @@
 .single-cuento,
 .que,
-.single-dialogo {
+.single-dialogo,
+.single-project {
   .content {
     padding-top: $pad-4;
 
@@ -8,6 +9,18 @@
 
     .main {
       @extend .centrar;
+    }
+
+    img {
+      height: auto;
+    }
+
+    figure {
+      margin-bottom: 4rem;
+
+      figcaption {
+        font-size: 0.8rem;
+      }
     }
   }
 }
