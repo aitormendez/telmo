@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fee04b56d98ac7f59c3abf29a863a05",
+    "content-hash": "cbba3a56c5fa4192a89a6822657b5bff",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -1086,6 +1086,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/easy-wp-smtp/"
+        },
+        {
+            "name": "wpackagist-plugin/embed-peertube-playlist",
+            "version": "1.04",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/embed-peertube-playlist/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/embed-peertube-playlist.zip?timestamp=1596444995"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/embed-peertube-playlist/"
         },
         {
             "name": "wpackagist-plugin/highlighting-code-block",
