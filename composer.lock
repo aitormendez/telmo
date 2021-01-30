@@ -21,16 +21,16 @@
         },
         {
             "name": "aitormendez/peertube",
-            "version": "1.1",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aitormendez/peertube.git",
-                "reference": "d6f0f80104d97643a6f448da62a3d8faa91dd4f6"
+                "reference": "c3fc4297af9b52395e78e5a2a6512818959b8f2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/peertube/zipball/d6f0f80104d97643a6f448da62a3d8faa91dd4f6",
-                "reference": "d6f0f80104d97643a6f448da62a3d8faa91dd4f6",
+                "url": "https://api.github.com/repos/aitormendez/peertube/zipball/c3fc4297af9b52395e78e5a2a6512818959b8f2a",
+                "reference": "c3fc4297af9b52395e78e5a2a6512818959b8f2a",
                 "shasum": ""
             },
             "require": {
@@ -49,10 +49,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/peertube/tree/1.1",
+                "source": "https://github.com/aitormendez/peertube/tree/1.0.1",
                 "issues": "https://github.com/aitormendez/peertube/issues"
             },
-            "time": "2021-01-30T08:31:13+00:00"
+            "time": "2021-01-30T15:58:13+00:00"
         },
         {
             "name": "analogmemory/wp-sync-db",
