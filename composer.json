@@ -68,6 +68,10 @@
               "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
           }
       }
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/peertube.git"
     }
   ],
   "require": {
@@ -91,6 +95,7 @@
     "wpackagist-plugin/post-type-switcher": "*",
     "wpackagist-plugin/highlighting-code-block": "*",
     "wpackagist-plugin/embed-peertube-playlist": "*",
+    "aitormendez/peertube": "*",
     "stoutlogic/acf-builder": "^1.8"
   },
   "require-dev": {

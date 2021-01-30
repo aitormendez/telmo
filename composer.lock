@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbba3a56c5fa4192a89a6822657b5bff",
+    "content-hash": "a39a7ebca64e97a97c7d14b4705207fa",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -18,6 +18,41 @@
                 "ffraenz/private-composer-installer": "5.0.1"
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "aitormendez/peertube",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aitormendez/peertube.git",
+                "reference": "d6f0f80104d97643a6f448da62a3d8faa91dd4f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aitormendez/peertube/zipball/d6f0f80104d97643a6f448da62a3d8faa91dd4f6",
+                "reference": "d6f0f80104d97643a6f448da62a3d8faa91dd4f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPML",
+                    "homepage": "https://e451.net/"
+                }
+            ],
+            "homepage": "https://github.com/aitormendez/peertube",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/aitormendez/peertube/tree/1.1",
+                "issues": "https://github.com/aitormendez/peertube/issues"
+            },
+            "time": "2021-01-30T08:31:13+00:00"
         },
         {
             "name": "analogmemory/wp-sync-db",
@@ -1097,7 +1132,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/embed-peertube-playlist.zip?timestamp=1596444995"
+                "url": "https://downloads.wordpress.org/plugin/embed-peertube-playlist.zip?timestamp=1611926182"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1203,12 +1238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "db043e108edc5065662fec040aedea5bf30f8a12"
+                "reference": "7263d7d73a4de68760e05f3eda5eee73b59f0f6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/db043e108edc5065662fec040aedea5bf30f8a12",
-                "reference": "db043e108edc5065662fec040aedea5bf30f8a12",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/7263d7d73a4de68760e05f3eda5eee73b59f0f6d",
+                "reference": "7263d7d73a4de68760e05f3eda5eee73b59f0f6d",
                 "shasum": ""
             },
             "conflict": {
@@ -1274,6 +1309,8 @@
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1",
                 "ezyang/htmlpurifier": "<4.1.1",
                 "firebase/php-jwt": "<2",
+                "flarum/sticky": ">=0.1-beta.14,<=0.1-beta.15",
+                "flarum/tags": "<=0.1-beta.13",
                 "fooman/tcpdf": "<6.2.22",
                 "fossar/tcpdf-parser": "<6.2.22",
                 "friendsofsymfony/oauth2-php": "<1.3",
@@ -1389,6 +1426,7 @@
                 "slim/slim": "<2.6",
                 "smarty/smarty": "<3.1.33",
                 "socalnick/scn-social-auth": "<1.15.2",
+                "socialiteproviders/steam": "<1.1",
                 "spoonity/tcpdf": "<6.2.22",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
                 "ssddanbrown/bookstack": "<0.29.2",
@@ -1517,7 +1555,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-20T22:18:29+00:00"
+            "time": "2021-01-29T18:18:11+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
