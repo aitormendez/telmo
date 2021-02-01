@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a39a7ebca64e97a97c7d14b4705207fa",
+    "content-hash": "45e7a514f4effe1e46c151ed51b3923e",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -21,25 +21,29 @@
         },
         {
             "name": "aitormendez/peertube",
-            "version": "1.0.2",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aitormendez/peertube.git",
-                "reference": "a04a9cc885d7832b5fb5ea1cfc0318bd3daa1981"
+                "reference": "f37fe4e0f62573636acfadf9e115fd6d32ec8d37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/peertube/zipball/a04a9cc885d7832b5fb5ea1cfc0318bd3daa1981",
-                "reference": "a04a9cc885d7832b5fb5ea1cfc0318bd3daa1981",
+                "url": "https://api.github.com/repos/aitormendez/peertube/zipball/f37fe4e0f62573636acfadf9e115fd6d32ec8d37",
+                "reference": "f37fe4e0f62573636acfadf9e115fd6d32ec8d37",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "php": ">=7"
             },
             "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
             "authors": [
                 {
-                    "name": "WPML",
+                    "name": "Aitor Méndez",
                     "homepage": "https://e451.net/"
                 }
             ],
@@ -49,10 +53,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/peertube/tree/1.0.2",
-                "issues": "https://github.com/aitormendez/peertube/issues"
+                "issues": "https://github.com/aitormendez/peertube/issues",
+                "source": "https://github.com/aitormendez/peertube/tree/1.0.1"
             },
-            "time": "2021-01-31T08:13:32+00:00"
+            "time": "2021-02-01T09:59:24+00:00"
         },
         {
             "name": "analogmemory/wp-sync-db",
@@ -375,16 +379,16 @@
         },
         {
             "name": "johnbillion/extended-cpts",
-            "version": "4.5.0",
+            "version": "4.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/extended-cpts.git",
-                "reference": "da72234393818600f1eecbcb7d6e651dfeca6f75"
+                "reference": "b8aef5ef64335d51784e391c9393145f50482fb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/da72234393818600f1eecbcb7d6e651dfeca6f75",
-                "reference": "da72234393818600f1eecbcb7d6e651dfeca6f75",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/b8aef5ef64335d51784e391c9393145f50482fb4",
+                "reference": "b8aef5ef64335d51784e391c9393145f50482fb4",
                 "shasum": ""
             },
             "require": {
@@ -432,7 +436,7 @@
             "homepage": "https://github.com/johnbillion/extended-cpts/",
             "support": {
                 "issues": "https://github.com/johnbillion/extended-cpts/issues",
-                "source": "https://github.com/johnbillion/extended-cpts/tree/4.5.0"
+                "source": "https://github.com/johnbillion/extended-cpts/tree/4.5.1"
             },
             "funding": [
                 {
@@ -440,7 +444,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-12T23:27:05+00:00"
+            "time": "2021-01-26T10:10:55+00:00"
         },
         {
             "name": "oscarotero/env",
