@@ -12,8 +12,8 @@
     ]
   },
   "publicPath": "/app/themes/tlm",
-  "devUrl": "http://telmo.test",
-  "proxyUrl": "http://localhost:3000",
+  "devUrl": "https://telmo.test",
+  "proxyUrl": "https://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",
