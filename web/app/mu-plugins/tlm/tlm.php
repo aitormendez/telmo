@@ -65,6 +65,14 @@ add_action( 'init', function() {
 
 
   register_extended_post_type(
+      'canvas',
+      [
+          'show_in_rest' => true,
+          'show_in_feed' => true,
+      ]
+  );
+
+  register_extended_post_type(
       'merz',
       [
           'show_in_rest' => true,

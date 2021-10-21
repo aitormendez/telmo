@@ -13,6 +13,7 @@ import mundo from './routes/mundo';
 import postTypeArchiveDialogos from './routes/archive';
 import postTypeArchiveMerz from './routes/merz';
 import singleMerz from './routes/single-merz';
+import singleCanvas from './routes/single-canvas';
 import pageMapaData from './routes/mapa';
 
 /** Populate Router instance with DOM routes */
@@ -28,6 +29,7 @@ const routes = new Router({
   postTypeArchiveMerz,
   singleMerz,
   pageMapaData,
+  singleCanvas,
 });
 
 // Load Events
